@@ -24,7 +24,7 @@
     "sourceType": "module"
   },
   "plugins": ["react", "@typescript-eslint", "react-hooks", "prettier", "html"],
-  "ignorePatterns": ["node_modules", "dist"],
+  "ignorePatterns": ["node_modules", "dist", "**/*.png"],
   "rules": {
     "react/react-in-jsx-scope": "off",
     "react/no-unescaped-entities": 0,

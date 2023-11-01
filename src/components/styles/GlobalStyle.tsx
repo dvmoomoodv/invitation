@@ -30,6 +30,7 @@ const GlobalStyle = createGlobalStyle<{ theme: DefaultTheme }>`
     font-weight: 500;
     background-color: ${({ theme }) => theme.colors?.body};
     color: ${({ theme }) => theme.colors?.text[100]};
+    overflow-y: hidden
   }
 
   /* ===== Custom Scroll Bar ===== */
@@ -66,6 +67,20 @@ const GlobalStyle = createGlobalStyle<{ theme: DefaultTheme }>`
     width: 1px;
     height: 1px;
     overflow: hidden;
+  }
+
+  .menuBar{
+    position:fixed;
+    display:flex;
+    justify-content:space-between;
+    width: 100%;
+    background-color: #DC461D;
+    marign:0;
+  }
+  .menuBar div{
+    margin :5px;
+  }
+  .menuBar div.last{
   }
 `;
 

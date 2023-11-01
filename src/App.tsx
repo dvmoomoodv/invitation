@@ -54,6 +54,10 @@ function App() {
       <h1 className="sr-only" aria-label="Terminal Portfolio">
         Wedding card
       </h1>
+      {/* <div className="menuBar">
+        <div>Menu</div>
+        <div className="last"><span>close</span></div>
+      </div> */}
       {themeLoaded && (
         <ThemeProvider theme={selectedTheme}>
           <GlobalStyle />
