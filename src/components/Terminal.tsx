@@ -28,11 +28,10 @@ type Command = {
 
 export const commands: Command = [
   { cmd: "greeting", desc: "인사말", tab: 8 },
-  { cmd: "clear", desc: "clear the terminal", tab: 8 },
-  { cmd: "echo", desc: "print out anything", tab: 9 },
-  { cmd: "education", desc: "my education background", tab: 4 },
-  { cmd: "email", desc: "send an email to me", tab: 8 },
-  { cmd: "gui", desc: "go to my portfolio in GUI", tab: 10 },
+  { cmd: "clear", desc: "터미널 화면 초기화", tab: 8 },
+  { cmd: "echo", desc: "무엇이든 입력", tab: 9 },
+  { cmd: "email", desc: "이메일", tab: 8 },
+  { cmd: "gui", desc: "개인사이트", tab: 10 },
   { cmd: "help", desc: "사용가능한 명령어", tab: 9 },
   { cmd: "history", desc: "입력한 명령어 기록", tab: 6 },
   { cmd: "pwd", desc: "현재경로", tab: 10 },
@@ -40,6 +39,7 @@ export const commands: Command = [
   { cmd: "themes", desc: "테마 변경", tab: 7 },
   { cmd: "welcome", desc: "페이지 방문 인사말", tab: 6 },
   { cmd: "whoami", desc: "현재사용자", tab: 7 },
+  { cmd: "gallery", desc: "웨딩사진", tab: 7 },
 ];
 
 type Term = {

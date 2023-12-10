@@ -1,7 +1,6 @@
 import About from "./commands/About";
 import Clear from "./commands/Clear";
 import Echo from "./commands/Echo";
-import Education from "./commands/Education";
 import Email from "./commands/Email";
 import GeneralOutput from "./commands/GeneralOutput";
 import Gui from "./commands/Gui";
@@ -10,6 +9,7 @@ import Welcome from "./commands/Welcome";
 import History from "./commands/History";
 import Socials from "./commands/Socials";
 import Themes from "./commands/Themes";
+import Gallery from "./commands/Gallery";
 import { OutputContainer, UsageDiv } from "./styles/Output.styled";
 import { termContext } from "./Terminal";
 import { useContext } from "react";
@@ -36,7 +36,6 @@ const Output: React.FC<Props> = ({ index, cmd }) => {
           greeting: <About />,
           clear: <Clear />,
           echo: <Echo />,
-          education: <Education />,
           email: <Email />,
           gui: <Gui />,
           help: <Help />,
@@ -46,6 +45,7 @@ const Output: React.FC<Props> = ({ index, cmd }) => {
           themes: <Themes />,
           welcome: <Welcome />,
           whoami: <GeneralOutput>attendess</GeneralOutput>,
+          gallery: <Gallery></Gallery>,
         }[cmd]
       }
     </OutputContainer>

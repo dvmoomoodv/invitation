@@ -16,3 +16,9 @@ export const HighlightSpan = styled.span`
 export const HighlightAlt = styled.span`
   font-weight: 700;
 `;
+
+export const Image = styled.div`
+  img{
+    width: 100%;
+  }
+`;
