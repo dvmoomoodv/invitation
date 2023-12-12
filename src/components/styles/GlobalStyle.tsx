@@ -3,8 +3,11 @@ import { normalize } from "styled-normalize";
 
 const GlobalStyle = createGlobalStyle<{ theme: DefaultTheme }>`
   ${normalize}
+
+
   
   *, ::before, ::after {
+    font-size: 14px;
     border-width: 0;
     border-style: solid;
     border-color: theme('borderColor.DEFAULT', currentColor);
